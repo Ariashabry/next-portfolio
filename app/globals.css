@@ -591,6 +591,7 @@ swiper-container {
 
 swiper-slide {
   height: auto;
+  max-width: 392px !important;
 }
 
 /* Swiper styles */

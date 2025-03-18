@@ -3,11 +3,11 @@
 import { useRef, useEffect, useState } from 'react';
 import { register } from 'swiper/element/bundle';
 import Image from "next/image";
-import kstylehub from '../assets/kstylehub.png'
+import kstylehub from '../assets/kstylehub.png';
 
 const Portfolio = () => {
     const swiperRef = useRef(null);
-    const [activeFilter, setActiveFilter] = useState('all');
+    const [activeFilter, setActiveFilter] = useState('all'); // Default filter set to 'all'
 
     const projectItem = [
         {
@@ -93,11 +93,11 @@ const Portfolio = () => {
         const params = {
             slidesPerView: 1,
             spaceBetween: 20,
-            loop: true, // Always enable loop
+            loop: true,
             autoplay: {
-                delay: 2000, // 2 seconds delay between slides
-                disableOnInteraction: false, // Continue autoplay after user interaction
-                pauseOnMouseEnter: true // Pause on hover
+                delay: 2000,
+                disableOnInteraction: false,
+                pauseOnMouseEnter: true
             },
             breakpoints: {
                 320: {
@@ -118,14 +118,12 @@ const Portfolio = () => {
         // Small delay to ensure DOM is ready
         setTimeout(() => {
             if (swiperRef.current) {
-                // Assign parameters to Swiper element
                 Object.assign(swiperRef.current, params);
-                // Initialize Swiper
                 swiperRef.current.initialize();
             }
         }, 0);
 
-    }, [activeFilter, filteredProjects.length]); // Re-run when filter changes
+    }, [filteredProjects.length]); // Re-run when filteredProjects changes
 
     useEffect(() => {
         // Add structured data for SEO
@@ -223,8 +221,8 @@ const Portfolio = () => {
                                                 src={item.image}
                                                 alt={item.name}
                                                 style={{ objectPosition: 'left top' }}
-                                                width={500} // Replace 'full' with a numeric value
-                                                height={500} // Replace 'full' with a numeric value
+                                                width={500}
+                                                height={500}
                                             />
                                         </a>
                                         <div className="p-5">
@@ -237,12 +235,6 @@ const Portfolio = () => {
                                                     </span>
                                                 ))}
                                             </div>
-                                            {/* <a href={item.link} className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                                                View Project
-                                                <svg className="w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                                                    <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-                                                </svg>
-                                            </a> */}
                                         </div>
                                     </div>
                                 </swiper-slide>
