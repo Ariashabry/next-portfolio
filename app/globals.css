@@ -12,13 +12,15 @@
 html {
   -moz-text-size-adjust: none;
   -webkit-text-size-adjust: none;
-  text-size-adjust: none;
+  -ms-text-size-adjust: none;
+      text-size-adjust: none;
 }
 
 /* Remove default margin in favour of better control in authored CSS */
 body, h1, h2, h3, h4, p,
 figure, blockquote, dl, dd {
-  margin-block-end: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
@@ -47,7 +49,8 @@ h3, h4 {
 
 /* A elements that don't have a class get default styles */
 a:not([class]) {
-  text-decoration-skip-ink: auto;
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
   color: currentColor;
 }
 
@@ -155,7 +158,7 @@ textarea:not([rows]) {
   position: absolute;
     width: 50%;
     right: 0px;
-    bottom: -16px;
+    bottom: 0px;
 }
 
 @media (max-width: 767px) {
@@ -398,12 +401,7 @@ section#about{
 	position: absolute;
 	z-index: -1;
 	border-radius: 16px;
-	
-	-webkit-transition: all .5s ease;
-	   -moz-transition: all .5s ease;
-	    -ms-transition: all .5s ease;
-	     -o-transition: all .5s ease;
-	        transition: all .5s ease;
+	transition: all .5s ease;
 }
 .orido_tm_informations .right .filter ul{
 	margin: 0px;
@@ -462,10 +460,6 @@ section#about{
 @-webkit-keyframes slide-down {
       0% { -webkit-transform: translateX(10%); }   
     100% {  -webkit-transform: translateX(0); }
-}
-@-moz-keyframes slide-down {
-      0% {  -moz-transform: translateX(10%); }   
-    100% {  -moz-transform: translateX(0); }
 }
 .orido_tm_informations .skillbox{
 	width: 100%;
@@ -682,7 +676,8 @@ swiper-container::part(pagination-bullet-active) {
 /* Image hover effect */
 .rounded-t-lg {
     transform-origin: center;
-    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
     -webkit-font-smoothing: subpixel-antialiased;
 }
 
