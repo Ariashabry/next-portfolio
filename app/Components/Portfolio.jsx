@@ -137,7 +137,7 @@ const Portfolio = () => {
             "jobTitle": "Software Engineer",
             "worksFor": {
                 "@type": "Organization",
-                "name": "Your Company Name"
+                "name": "PT NOZYRA Global Solusindo"
             },
             "description": "Full Stack Software Engineer specializing in web and mobile development",
             "knowsAbout": ["Web Development", "Mobile Development", "React", "Golang", "Laravel", "Flutter"]
@@ -219,11 +219,12 @@ const Portfolio = () => {
                                     <div className="bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
                                         <a href={item.link} className="block overflow-hidden rounded-t-lg h-48">
                                             <Image
-                                                className="rounded-t-lg w-full h-full object-cover transition-transform duration-300 hover:scale-110"
+                                                className="rounded-t-lg w-full h-full object-cover object-left-top transition-transform duration-300 hover:scale-110"
                                                 src={item.image}
                                                 alt={item.name}
-                                                priority
-                                                fill
+                                                style={{ objectPosition: 'left top' }}
+                                                width={500} // Replace 'full' with a numeric value
+                                                height={500} // Replace 'full' with a numeric value
                                             />
                                         </a>
                                         <div className="p-5">

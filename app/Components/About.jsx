@@ -1,11 +1,7 @@
 "use client";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFilePdf, faPhone } from '@fortawesome/free-solid-svg-icons';
-import { faInstagram } from '@fortawesome/free-brands-svg-icons';
-import { faLocationArrow } from '@fortawesome/free-solid-svg-icons';
-import { faGithub } from '@fortawesome/free-brands-svg-icons/faGithub';
-import { faLinkedin } from '@fortawesome/free-brands-svg-icons/faLinkedin';
+import { faFilePdf } from '@fortawesome/free-solid-svg-icons';
 
 const About = () => {
 
