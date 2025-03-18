@@ -20,7 +20,7 @@ const Jumbotron = () => {
                                 Aria Shabry
                             </h1>
                             <h3 className="text-xl md:text-2xl lg:text-4xl mb-12 job-title text-yellow-600 dark:text-purple-500">Software Engineer</h3>
-                            <p className="text-lg md:text-xl text-black dark:text-white mb-3">Hi, I'm Aria! I specialize in building scalable backend solutions with Golang, optimizing cloud infrastructure, and automating workflows through DevOps.</p>
+                            <p className="text-lg md:text-xl text-black dark:text-white mb-3">Hi, I'm Aria Shabry ! I specialize in building scalable backend solutions with Golang, optimizing cloud infrastructure, and automating workflows through DevOps.</p>
                             <p className="text-lg md:text-xl text-black dark:text-white mb-3">I’m always excited to collaborate on innovative projects <br />—let’s build something great together!</p>
                         </div>
                         <div className="mt-20">
