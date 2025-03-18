@@ -10,7 +10,7 @@ const About = () => {
     }
 
     return (
-        <section className="bg-purple-600 dark:bg-gray-700 h-full my-0" id="about">
+        <section className="bg-purple-600 dark:bg-gray-700 h-full lg:mt-0 sm:mt-24 mt-24 md:mt-0 xl:mt-0 " id="about">
             <div className="container mx-auto max-w-screen-xl text-center h-full flex items-center">
                 <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-4 w-full">
                     <div className="flex items-center justify-center left pb-20">

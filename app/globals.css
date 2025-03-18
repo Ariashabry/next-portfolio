@@ -210,10 +210,6 @@ textarea:not([rows]) {
     transition: all .5s ease;
 }
 
-section#about{ 
-  margin-top: 0rem;
-}
-
 .left{
   width: 100%;
   padding-right: 0px;

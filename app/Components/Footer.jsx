@@ -12,7 +12,7 @@ const Footer = () => {
                 <div className="lg:flex lg:items-start lg:gap-8">
                     <div className="text-gray-800 dark:text-gray-200">
                         <a href="#home" className="flex items-center">
-                            <Image src={logo} className="h-12 w-full" alt="Logo" />
+                            <Image src={logo} className="h-12 w-auto" alt="Logo" />
                         </a>
                     </div>
 
