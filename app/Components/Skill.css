@@ -1,0 +1,44 @@
+/* Additional styles for a cleaner design and transition effects */
+
+#skills {
+    transition: all 0.3s ease-in-out;
+}
+
+.h2-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+button[role="tab"] {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button[role="tab"]:hover {
+    background-color: #6b46c1;
+    color: #fff;
+}
+
+button[role="tab"][aria-selected="true"] {
+    background-color: #6b46c1;
+    color: #fff;
+}
+
+button[role="tab"][aria-selected="false"] {
+    background-color: #f7fafc;
+    color: #4a5568;
+}
+
+.tab-content {
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0;
+}
+
+.tab-content.active {
+    opacity: 1;
+}
+
+.truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
