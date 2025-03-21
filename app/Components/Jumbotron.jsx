@@ -24,11 +24,11 @@ const Jumbotron = () => {
                             <p className="text-lg md:text-xl text-black dark:text-white mb-3">I’m always excited to collaborate on innovative projects <br />—let’s build something great together!</p>
                         </div>
                         <div className="mt-20">
-                            <a type="button" href="#contact" className="text-white bg-purple-700 hover:bg-purple-800 focus:outline-none focus:ring-4 focus:ring-purple-300 font-medium rounded-full text-center mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900 text-sm lg:px-10 lg:py-5 px-5 py-3">
+                            <a type="button" href="#contact" className="text-white bg-purple-700 hover:bg-purple-800 focus:outline-none focus:ring-4 focus:ring-purple-300 font-medium rounded-full text-center mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900 text-sm lg:px-10 lg:py-5 px-5 py-3 block md:inline-block lg:inline-block">
                                 <FontAwesomeIcon icon={faPhone} className="mr-2" /> Contact Me
                             </a>
-                            <a type="button" href='#portfolio' className="text-gray-900 hover:text-white border border-gray-800 hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium text-center me-2 mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800 rounded-full ms-4 text-sm lg:px-10 lg:py-5 px-5 py-3">
-                                <FontAwesomeIcon icon={faLocationArrow} className="mr-2 text-xl" /> My portfolio
+                            <a type="button" href='#portfolio' className="text-gray-900 hover:text-white border border-gray-800 hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium text-center mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800 rounded-full text-sm lg:px-10 lg:py-5 px-5 py-3 block md:inline-block lg:inline-block ms-0 md:ms-4 lg:ms-4">
+                                <FontAwesomeIcon icon={faLocationArrow} className="mr-2" /> My portfolio
                             </a>
                         </div>
                         <div className='button-sosmed lg:mt-48 mt-24 pb-8'>
