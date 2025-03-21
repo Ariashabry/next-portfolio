@@ -153,12 +153,20 @@ textarea:not([rows]) {
   }
 }
 
+.box-image{
+  position: relative;
+  /* Ensure the container has a defined height for proper positioning */
+  height: auto;
+}
 
 .avatar{
   position: absolute;
-    width: 50%;
-    right: 0px;
-    bottom: 0px;
+  width: 100%;
+  right:  0;
+  bottom: 0;
+  /* Ensure the avatar scales properly within the container */
+  max-width: 100%;
+  max-height: 100%;
 }
 
 @media (max-width: 767px) {

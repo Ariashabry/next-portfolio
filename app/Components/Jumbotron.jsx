@@ -11,7 +11,7 @@ import bg_hero from '../assets/bg-hero (1).png';
 
 const Jumbotron = () => {
     return (
-        <section className="bg-white dark:bg-gray-900 pt-36 h-svh" id='home'>
+        <section className="bg-white dark:bg-gray-900 md:pt-36 h-full" id='home'>
             <div className="mx-auto max-w-screen-xl text-center h-full flex items-center">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div className="p-4 text-left h-full flex flex-col justify-center">
@@ -31,7 +31,7 @@ const Jumbotron = () => {
                                 <FontAwesomeIcon icon={faLocationArrow} className="mr-2" /> My portfolio
                             </a>
                         </div>
-                        <div className='button-sosmed lg:mt-48 mt-24 pb-8'>
+                        <div className='button-sosmed py-20'>
                             <h3 className='inline-block me-8 text-xl font-semibold text-black dark:text-purple-500 follow-me'>Follow Me: </h3>
                             <div className='p-2 inline-block'>
                                 <a href="https://instagram.com/ariashabry" target="_blank" type="button" className="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-full text-sm px-3  py-2 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700 inline-block">
@@ -46,7 +46,7 @@ const Jumbotron = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="items-center justify-center hidden md:flex">
+                    <div className="items-center justify-center hidden md:flex box-image">
                         <div className="avatar">
                             <div className="img">
                                 <Image src={bg_hero} alt="" />
