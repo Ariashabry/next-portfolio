@@ -1,7 +1,6 @@
 "use client";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import logo from "../assets/logo.webp";
 import Image from "next/image"
 import { faGithub, faInstagram, faLinkedin, faMediumM } from "@fortawesome/free-brands-svg-icons";
 
@@ -12,7 +11,8 @@ const Footer = () => {
                 <div className="lg:flex lg:items-start lg:gap-8">
                     <div className="text-gray-800 dark:text-gray-200">
                         <a href="#home" className="flex items-center">
-                            <Image src={logo} className="h-12 w-auto" alt="Logo" />
+                            <Image src='/assets/images/logo.webp' className="h-12 w-auto" alt="Logo" width={48}
+                                height={48} />
                         </a>
                     </div>
 

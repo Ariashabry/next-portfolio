@@ -7,7 +7,6 @@ import { faLocationArrow } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons/faGithub';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons/faLinkedin';
 import Image from "next/image";
-import bg_hero from '../assets/bg-hero (1).png';
 
 const Jumbotron = () => {
     return (
@@ -49,7 +48,14 @@ const Jumbotron = () => {
                     <div className="items-center justify-center hidden md:flex box-image">
                         <div className="avatar">
                             <div className="img">
-                                <Image src={bg_hero} alt="" />
+                                <Image
+                                    src='/assets/images/bg-hero (1).png'
+                                    alt="Portrait of Aria Shabry, Software Engineer" // Use descriptive and relevant alt text
+                                    width={500}
+                                    height={500}
+                                    style={{ width: '100%', height: 'auto', maxWidth: '100%', maxHeight: '100%' }}
+                                    priority // Ensures the image is loaded quickly for SEO
+                                />
                             </div>
                         </div>
                     </div>

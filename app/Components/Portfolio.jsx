@@ -3,7 +3,6 @@
 import { useRef, useEffect, useState } from 'react';
 import { register } from 'swiper/element/bundle';
 import Image from "next/image";
-import kstylehub from '../assets/kstylehub.png';
 
 const Portfolio = () => {
     const swiperRef = useRef(null);
@@ -15,7 +14,7 @@ const Portfolio = () => {
             name: 'UNRI Student Admission Web',
             category: 'web',
             description: 'Modern admission system for Universitas Riau new students.',
-            image: 'https://flowbite.com/docs/images/blog/image-1.jpg',
+            image: '/assets/images/PMB.png', // Use relative URL path
             tags: ['Laravel 11', 'Tailwind', 'MySQL'],
             link: '#portfolio'
         },
@@ -33,7 +32,7 @@ const Portfolio = () => {
             name: 'K-Style Hub Website',
             category: 'web',
             description: 'Business landing page website for K-Style Hub and Unnispick services.',
-            image: kstylehub,
+            image: '/assets/images/kstylehub.png',
             tags: ['React', 'Node.js', 'AWS'],
             link: '#portfolio'
         },

@@ -3,7 +3,6 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import logo from "../assets/logo.webp";
 
 const Navbar = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -40,7 +39,7 @@ const Navbar = () => {
                     className="flex items-center space-x-3 rtl:space-x-reverse"
                 >
                     <Image
-                        src={logo}
+                        src='/assets/images/logo.webp'
                         className="h-12"
                         alt="Flowbite Logo"
                         width={48}
